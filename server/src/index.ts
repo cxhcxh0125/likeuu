@@ -24,6 +24,7 @@ console.log("=====================");
 const app = express();
 const PORT = Number(process.env.PORT ?? 3000);
 const HOST = process.env.HOST ?? "127.0.0.1";
+const isProd = process.env.NODE_ENV === "production";
 
 if (!Number.isFinite(PORT) || PORT <= 0) {
   throw new Error(`Invalid PORT: ${process.env.PORT}`);
@@ -31,10 +32,13 @@ if (!Number.isFinite(PORT) || PORT <= 0) {
 
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:3000', // 允许前端访问
-  credentials: true
-}));
+
+if (process.env.NODE_ENV !== "production") {
+  app.use(cors({
+    origin: "http://localhost:3000",
+    credentials: true
+  }));
+}
 
 // 支持大文件上传（base64 图片）
 app.use(express.json({ limit: '20mb' }));
