@@ -1,0 +1,7 @@
+{
+  "name": "Likeuu AI Fashion Companion",
+  "description": "An intelligent AI fashion consultant that helps you match outfits, visualize looks with Gemini, and manage your digital wardrobe.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
