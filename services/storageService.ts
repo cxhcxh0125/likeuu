@@ -1,5 +1,5 @@
 
-const DB_NAME = 'LikeuuFashionDB';
+const DB_NAME = 'ULookFashionDB';
 const DB_VERSION = 2; // 升级版本以解决版本冲突
 const STORES = {
   WARDROBE: 'wardrobe',

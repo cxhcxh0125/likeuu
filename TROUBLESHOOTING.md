@@ -16,7 +16,7 @@ VersionError: The requested version (1) is less than the existing version (2)
 - ✅ 已修复：代码已升级到版本 2 并添加了自动降级处理
 - 如果问题仍然存在，可以在浏览器开发者工具中：
   1. 打开 Application/存储标签
-  2. 找到 IndexedDB → `LikeuuFashionDB`
+  2. 找到 IndexedDB → `ULookFashionDB`
   3. 删除该数据库
   4. 刷新页面，数据库会重新创建
 

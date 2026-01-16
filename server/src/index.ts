@@ -46,7 +46,7 @@ app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
 // Health check endpoint
 app.get("/health", (_req, res) => res.json({ ok: true }));
-app.get("/", (_req, res) => res.send("likeuu backend ok"));
+app.get("/", (_req, res) => res.send("ULook backend ok"));
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
 // API routes

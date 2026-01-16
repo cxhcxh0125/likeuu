@@ -8,7 +8,7 @@ import Wardrobe from './components/Wardrobe';
 import { chatWithGemini, generateFashionImage } from './services/geminiService';
 import { storage } from './services/storageService';
 
-const SYSTEM_INSTRUCTION = `You are "Likeuu Stylist", a high-end AI fashion consultant. 
+const SYSTEM_INSTRUCTION = `You are "ULook Stylist", a high-end AI fashion consultant. 
 Keep responses stylish, helpful, and concise. 
 Always suggest color palettes and specific garment types.`;
 
@@ -24,7 +24,7 @@ type View = 'stylist' | 'try-on';
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>('stylist');
   const [messages, setMessages] = useState<Message[]>([
-    { id: '1', role: 'assistant', content: '欢迎回来！我是你的 AI 穿搭顾问 Likeuu。今天想为哪个场合挑选衣服？', timestamp: Date.now() }
+    { id: '1', role: 'assistant', content: '欢迎回来！我是你的 AI 穿搭顾问 ULook。今天想为哪个场合挑选衣服？', timestamp: Date.now() }
   ]);
   const [wardrobe, setWardrobe] = useState<ClothingItem[]>([]);
   const [savedLooks, setSavedLooks] = useState<SavedLook[]>([]);
@@ -585,7 +585,7 @@ const App: React.FC = () => {
       <footer className="py-12 border-t border-gray-100 flex flex-col items-center gap-2 bg-white">
         <div className="flex items-center gap-2 text-gray-400">
            <Sparkles size={16} className="text-pink-300" />
-           <span className="text-xs font-medium uppercase tracking-widest">Likeuu AI Stylist &copy; 2025</span>
+           <span className="text-xs font-medium uppercase tracking-widest">ULook AI Stylist &copy; 2025</span>
         </div>
       </footer>
     </div>
