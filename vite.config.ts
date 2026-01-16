@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/', // 生产环境根路径部署
       server: {
         port: 3000,
         host: '0.0.0.0',
