@@ -257,7 +257,7 @@ const App: React.FC = () => {
             <div className="bg-pink-500 p-1.5 rounded-xl shadow-lg shadow-pink-200">
                <Sparkles size={20} className="text-white" />
             </div>
-            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-pink-600 to-pink-400 bg-clip-text text-transparent hidden sm:block">Likeuu AI</span>
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-pink-600 to-pink-400 bg-clip-text text-transparent hidden sm:block">ULook</span>
           </div>
           
           <nav className="flex items-center gap-1 bg-gray-50 p-1 rounded-2xl">
